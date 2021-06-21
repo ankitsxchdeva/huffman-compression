@@ -17,7 +17,7 @@ static inline void traverse(Node *root, Code table[static ALPHABET], Code c) {
         uint8_t temp;
         if (root->left == NULL && root->right == NULL) {
             table[root->symbol] = c;
-        } 
+        } else {
             code_push_bit(&c, 0);
             traverse(root->left, table, c);
             code_pop_bit(&c, &temp);

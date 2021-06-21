@@ -1,6 +1,6 @@
 #include "io.h"
 
-#include "../util/variables.h"
+#include "variables.h"
 
 #include <fcntl.h>
 #include <inttypes.h>
